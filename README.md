@@ -1,12 +1,14 @@
-# a11y-tree-api
-Get accessibility tree for URL via simple API call, made possible via Accessibility.snapshot() by Puppeteer + Express
+# screenreadthis-api-server
 
-- https://pptr.dev/api/puppeteer.accessibility.snapshot
+Get accessibility tree for URL via simple API call, made possible via [Accessibility.snapshot()](https://pptr.dev/api/puppeteer.accessibility.snapshot) by Puppeteer + Express. 
 
+Demo (free tier render.com): https://screenreadthis-api-server.onrender.com/
 
+## Local development
 
 ```
-npm init -y
-npm i puppeteer express body-parser cors
+npm install
+node server.js
 ```
 
+Created for [mandrasch/screenreadthis](https://github.com/mandrasch/screenreadthis).
