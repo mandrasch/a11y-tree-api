@@ -1,0 +1,26 @@
+{
+  "name": "a11y-tree-api",
+  "version": "1.0.0",
+  "description": "Get accessibility tree for URL via simple API call, made possible via Accessibility.snapshot() by Puppeteer + Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandrasch/a11y-tree-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandrasch/a11y-tree-api/issues"
+  },
+  "homepage": "https://github.com/mandrasch/a11y-tree-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "puppeteer": "^17.1.0"
+  }
+}
