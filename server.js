@@ -37,7 +37,9 @@ const html = `
 
       <p>Example: <pre>${appUrl}/getA11yTree?url=https%3A%2F%2Fwww.w3.org%2FWAI%2Fdemos%2Fbad%2Fbefore%2Fhome.html</pre></p>
 
-      <p>Example site used: <a href="https://www.w3.org/WAI/demos/bad/before/home.html" target="_blank">WAI inaccessible homepage example</a> from <a href="https://www.w3.org/WAI/demos/bad/">WAI Demos before and after</a></p>
+      <a href="${appUrl}/getA11yTree?url=https%3A%2F%2Fwww.w3.org%2FWAI%2Fdemos%2Fbad%2Fbefore%2Fhome.html">Open example response</a>
+
+      <p><small>Example site used: <a href="https://www.w3.org/WAI/demos/bad/before/home.html" target="_blank">WAI inaccessible homepage example</a> from <a href="https://www.w3.org/WAI/demos/bad/">WAI Demos before and after</a></small></p>
 
       <h2>Get result for custom site</h2>
       <form method="GET" action="${appUrl}/getA11yTree">
@@ -79,13 +81,13 @@ app.get("/getA11yTree", async function (req, res) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(requestedUrl, { waitUntil: 'domcontentloaded' });
-    const snapshot = await page.accessibility.snapshot();
+    const accessibilityTreeSnapshot = await page.accessibility.snapshot();
     // clear up
     await browser.close();
 
     // send a11y tree as json
-    console.log('Successful! Sending json ...');
-    res.send(snapshot);
+    console.log('Successful! Sending json response...');
+    res.json(accessibilityTreeSnapshot);
 })
 
 /**
