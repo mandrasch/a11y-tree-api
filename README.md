@@ -4,6 +4,8 @@ Get accessibility tree for URL via simple API call, made possible via [Accessibi
 
 Demo (free tier render.com): https://screenreadthis-api-server.onrender.com/
 
+Created for [mandrasch/screenreadthis](https://github.com/mandrasch/screenreadthis).
+
 ## Local development
 
 ```
@@ -11,4 +13,3 @@ npm install
 node server.js
 ```
 
-Created for [mandrasch/screenreadthis](https://github.com/mandrasch/screenreadthis).
