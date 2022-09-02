@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require('cors');
 const port = process.env.PORT || 3001;
 const bodyParser = require('body-parser');
 app.use(express.json());
@@ -63,8 +64,9 @@ const html = `
 const puppeteer = require('puppeteer');
 /**
  * GET /getA11yTree endpoint
+ * (cors enabled, https://expressjs.com/en/resources/middleware/cors.html)
  */
-app.get("/getA11yTree", async function (req, res) {
+app.get("/getA11yTree",cors(), async function (req, res) {
 
     // Validation: check if url was submitted
     if (!req.query.url) {

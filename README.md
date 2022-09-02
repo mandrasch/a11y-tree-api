@@ -7,6 +7,6 @@ Get accessibility tree for URL via simple API call, made possible via Accessibil
 
 ```
 npm init -y
-npm i puppeteer express body-parser
+npm i puppeteer express body-parser cors
 ```
 
