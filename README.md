@@ -55,12 +55,12 @@ npm start
 
 ## Imprint and Privacy
 
-https://screenreadthis-api-server.onrender.com is hosted on european Cloud Instances via render.com, see https://render.com/privacy for more information. 
+https://screenreadthis-api-server.onrender.com is hosted on european Cloud Instances via render.com, see https://render.com/privacy for more information. Contact information / imprint: https://matthias-andrasch.eu/blog/impressum-datenschutz/
 
 <!-- Not working currently:>
 https://screenreadthis-api-server.mandrasch.eu is hosted on Hetzner European Cloud service, no personal data is stored. See https://docs.hetzner.com/general/general-terms-and-conditions/data-privacy-faq/ for more information on server log storage.
 -->
-Contact information / imprint: https://matthias-andrasch.eu/blog/impressum-datenschutz/
+
 
 ## License
 
