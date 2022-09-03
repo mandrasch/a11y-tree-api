@@ -2,7 +2,7 @@
 
 Retrieve the accessibility tree for URLs via simple API call, made possible via [Accessibility.snapshot()](https://pptr.dev/api/puppeteer.accessibility.snapshot) by Puppeteer. Server implemented via express.
 
-Created for [screenreadthis.mandrasch.eu](https://screenreadthis.mandrasch.eu/).
+Created for [ScreenreadThis!](https://screenreadthis.mandrasch.eu/)-experiment.
 
 ## API usage
 
