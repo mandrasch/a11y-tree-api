@@ -64,4 +64,4 @@ Contact information / imprint: https://matthias-andrasch.eu/blog/impressum-daten
 
 ## License
 
-Feel free to fork / re-use this for your own purpose! My own source code is provided as CC0/Public Domain, see package.json for licenses of used open source packages.
+Feel free to fork / re-use this for your own purpose! My own source code is provided as CC0/Public Domain, see package.json for open source packages used and their respective licenses.
