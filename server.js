@@ -80,21 +80,21 @@ app.get("/getA11yTree", cors(), async function (req, res) {
   const accessibilityTreeSnapshot = await page.accessibility.snapshot();
 
   // get html lang
-  let htmlLang;
-  await page.evaluate(() => {
-    htmlLang = document.querySelector('html').getAttribute("lang"); // returns null if not found
-    if (htmlLang === null) {
-      htmlLang = ''; // easier to parse as empty string (JSON)
-    }
-  })
+  const htmlLang = await page.evaluate(() => {
+   return document.querySelector('html').getAttribute("lang");
+  });
+  console.log('evaluate page finished,', htmlLang);
+  if (htmlLang === null) {
+    htmlLang = ''; // easier to parse as empty string (JSON)
+  }
 
   // clear up
   await browser.close();
 
   // send a11y tree as json
-  console.log('Successful! Sending json response...');
+  console.log('Successful! Sending json response, language detected: ...', htmlLang);
   let response = {... accessibilityTreeSnapshot};
-  response.lang = htmlLang;
+  response.htmlLangAttribute = htmlLang;
   res.json(response);
 })
 
