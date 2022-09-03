@@ -14,7 +14,7 @@ let appUrl = `http://localhost:${port}`; // local dev url
 
 // default prod url:
 if(process.env?.NODE_ENV === 'production'){
-  appUrl = 'https://screenreadthis-api-server.mandrasch';
+  appUrl = 'https://screenreadthis-api-server.mandrasch.eu';
   console.log(`Starting with production mode on ${appUrl}`);
 }
 
