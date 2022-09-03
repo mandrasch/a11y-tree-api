@@ -47,7 +47,7 @@ const html = `
   <body>
     <section>
       <h1>Hello from Accessibility Tree API endpoint demo!</h1>
-      <p>README: <a href="https://github.com/mandrasch/screenthis-api-server">https://github.com/mandrasch/screenreadthis-api-server</a></p>
+      <p>README, Privacy, Imprint: <a href="https://github.com/mandrasch/screenreadthis-api-server">https://github.com/mandrasch/screenreadthis-api-server</a></p>
 
     </section>
   </body>
