@@ -1,4 +1,4 @@
-# Archive
+# Archived repository 
 
 Functionality was moved into SvelteKit: https://github.com/mandrasch/screenreadthis
 
