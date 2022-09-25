@@ -1,3 +1,9 @@
+# Archive
+
+Functionality was moved into SvelteKit: https://github.com/mandrasch/screenreadthis
+
+<hr>
+
 # ScreenreadThis! API server
 
 Retrieve the accessibility tree for URLs via simple API call, made possible via [Accessibility.snapshot()](https://pptr.dev/api/puppeteer.accessibility.snapshot) by Puppeteer. Server implemented via express.
